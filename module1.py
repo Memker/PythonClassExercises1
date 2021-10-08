@@ -215,7 +215,18 @@ if __name__ == '__main__':
     #for index,value in enumerate(dList):
     #    print(index,':',value)
 
-    tuple1=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
+    tuple1=tuple(range(20))
     for i in tuple1:
         print(i)
     print(tuple1[:14:-1])
+    
+    a_tuple=tuple(range(20))
+    for i in a_tuple:
+        print(i,end=' ')
+    print("")
+    b_tuple=a_tuple[19:19-5:-1]
+    for i in b_tuple:
+        print(i,end=' ')
+    print("")
+
+
