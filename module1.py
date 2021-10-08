@@ -234,6 +234,6 @@ if __name__ == '__main__':
         print(i)
     for key,value in dict1.items():
         print(key,value)
-
-
+    print(dict1.keys())
+    print(dict1.values())
 
