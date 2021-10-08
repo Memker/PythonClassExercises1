@@ -215,18 +215,25 @@ if __name__ == '__main__':
     #for index,value in enumerate(dList):
     #    print(index,':',value)
 
-    tuple1=tuple(range(20))
-    for i in tuple1:
-        print(i)
-    print(tuple1[:14:-1])
+    #tuple1=tuple(range(20))
+    #for i in tuple1:
+    #    print(i)
+    #print(tuple1[:14:-1])
     
-    a_tuple=tuple(range(20))
-    for i in a_tuple:
-        print(i,end=' ')
-    print("")
-    b_tuple=a_tuple[19:19-5:-1]
-    for i in b_tuple:
-        print(i,end=' ')
-    print("")
+    #a_tuple=tuple(range(20))
+    #for i in a_tuple:
+    #    print(i,end=' ')
+    #print("")
+    #b_tuple=a_tuple[19:19-5:-1]
+    #for i in b_tuple:
+    #    print(i,end=' ')
+    #print("")
+
+    dict1={'a':1,'b':2,'c':3}
+    for i in dict1.items():
+        print(i)
+    for key,value in dict1.items():
+        print(key,value)
+
 
 
