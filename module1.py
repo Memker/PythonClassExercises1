@@ -242,23 +242,44 @@ if __name__ == '__main__':
     #dict2=dict(zip(x,y))
     #print(dict2)
 
-    x1=['name','phone','address']
-    y1=['小明','123','某路1号']
-    dict3=dict(zip(x1,y1))
-    print(dict3)
+    #x1=['name','phone','address']
+    #y1=['小明','123','某路1号']
+    #dict3=dict(zip(x1,y1))
+    #print(dict3)
 
-    dict4 = {'广东':{'广州':{'白云区'},
-                '深圳':{'龙岗区'},
-                '佛山':{'禅城区'},
-                },
-             '辽宁':{'大连':{'甘井子区'},
-                '沈阳':{'和平区'},
-                '盘锦':{'大洼区'},
-                }
-         }
-    print(dict4)
-    print(dict4.get('广东'))
-    print(dict4.get('广东').get('佛山'))
+    #dict4 = {'广东':{'广州':{'白云区'},
+    #            '深圳':{'龙岗区'},
+    #            '佛山':{'禅城区'},
+    #            },
+    #         '辽宁':{'大连':{'甘井子区'},
+    #            '沈阳':{'和平区'},
+    #            '盘锦':{'大洼区'},
+    #            }
+    #     }
+    #print(dict4)
+    #print(dict4.get('广东'))
+    #print(dict4.get('广东').get('佛山'))
 
+    #import random
+    #listRandom=[random.choice(range(10000)) for i in range(100)]
+    #newSet=set(listRandom)
+    #print(listRandom)
+    #print(newSet)
 
+    #aList=[3,5,7]
+    #bList=aList[::]
+    #print(aList==bList)
+    #print(aList is bList)
+    #print(id(aList)==id(bList))
+    #bList[1]=8
+    #print(bList)
+    #print(aList)
 
+    x=[1,2,[3,4]]
+    y=x[:]
+    x[0]=5
+    print(x)
+    print(y)
+    x[2].append(6)
+    print(x)
+    print(y)
