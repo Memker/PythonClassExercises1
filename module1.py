@@ -4,6 +4,7 @@ from pyecharts.charts import Bar
 import random
 import math
 from numpy import *
+import copy
 
 #def curveMove():
 #    for i in range(100):
@@ -276,12 +277,18 @@ if __name__ == '__main__':
     #print(aList)
 
     x=[1,2,[3,4]]
-    y=x[:]
+    y=copy.deepcopy(x)
     x[0]=5
     print(x)
     print(y)
     x[2].append(6)
     print(x)
     print(y)
+
+    #x=[1,2,[3,4]]
+    #y=copy.deepcopy(x)
+    #print(x)
+    #print(y)
+
 
     #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
