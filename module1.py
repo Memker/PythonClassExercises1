@@ -229,11 +229,36 @@ if __name__ == '__main__':
     #    print(i,end=' ')
     #print("")
 
-    dict1={'a':1,'b':2,'c':3}
-    for i in dict1.items():
-        print(i)
-    for key,value in dict1.items():
-        print(key,value)
-    print(dict1.keys())
-    print(dict1.values())
+    #dict1={'a':1,'b':2,'c':3}
+    #for i in dict1.items():
+    #    print(i)
+    #for key,value in dict1.items():
+    #    print(key,value)
+    #print(dict1.keys())
+    #print(dict1.values())
+
+    #x=['A','B','C','D']
+    #y=['a','b','b','c']
+    #dict2=dict(zip(x,y))
+    #print(dict2)
+
+    x1=['name','phone','address']
+    y1=['小明','123','某路1号']
+    dict3=dict(zip(x1,y1))
+    print(dict3)
+
+    dict4 = {'广东':{'广州':{'白云区'},
+                '深圳':{'龙岗区'},
+                '佛山':{'禅城区'},
+                },
+             '辽宁':{'大连':{'甘井子区'},
+                '沈阳':{'和平区'},
+                '盘锦':{'大洼区'},
+                }
+         }
+    print(dict4)
+    print(dict4.get('广东'))
+    print(dict4.get('广东').get('佛山'))
+
+
 
