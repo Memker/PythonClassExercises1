@@ -190,6 +190,32 @@ if __name__ == '__main__':
     #[i for ]
     #print(list11)
 
-    print(2.5+7%3*int(2.5+4.7)%2/4)
+    #print(2.5+7%3*int(2.5+4.7)%2/4)
 
-    print(float(2+3)/2+int(3.5)%int(2.5))
+    #print(float(2+3)/2+int(3.5)%int(2.5))
+
+    #+++++++++++++++++++++++++++++++++++++++++++2021.10.8
+
+    #v_typle = (False,3.5,'exp')
+    #(x,y,z)=v_typle
+    #x,y,z=v_typle
+    #x,y,z=[0,1,2]
+    #x.y.z=1,2,3
+    #x,y,zz=range(3)
+
+    #keys=['a','b','c','d']
+    #values=[1,2,3,4]
+    #for k,v in zip(keys,values):
+    #    print((k,v),end=' ')
+
+    #aList=[1,2,3]
+    #bList=[4,5,6]
+    #cList=[7,8,9]
+    #dList=zip(aList,bList,cList)
+    #for index,value in enumerate(dList):
+    #    print(index,':',value)
+
+    tuple1=[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19]
+    for i in tuple1:
+        print(i)
+    print(tuple1[:14:-1])
