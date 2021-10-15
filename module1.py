@@ -5,6 +5,8 @@ import random
 import math
 from numpy import *
 import copy
+import jieba
+import requests
 
 #def curveMove():
 #    for i in range(100):
@@ -313,30 +315,40 @@ if __name__ == '__main__':
     #print("")
 
     s3="AA#23.8#35%#1#BB"
-    if s3[:2]=="AA":
-        s3a=s3.split("#")
-        print("室内温度：",s3a[1],"度")
-        print("室内温度：",s3a[2])
-        if(s3a[3]=="1"):
-            print("防盗检测：有外人闯入")
-        else:
-            print("无效数据")
+    #if s3[:2]=="AA":
+    #    s3a=s3.split("#")
+    #    print("室内温度：",s3a[1],"度")
+    #    print("室内温度：",s3a[2])
+    #    if(s3a[3]=="1"):
+    #        print("防盗检测：有外人闯入")
+    #    else:
+    #        print("无效数据")
 
-    s4="《战狼二》是吴京指导的阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴吴京阿巴"
-    print(s4.find("吴京"))
-    print(s4.find("吴京",8))
-    print(s4.find("吴京",8,29))
-    print(s4.rfind("吴京"))
+    #s4="《战狼二》是吴京指导的阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴吴京阿巴"
+    #print(s4.find("吴京"))
+    #print(s4.find("吴京",8))
+    #print(s4.find("吴京",8,29))
+    #print(s4.rfind("吴京"))
 
-    print(s4.index("吴京"))
-    print(s4.index("吴京",8))
-    print(s4.rindex("吴京"))
+    #print(s4.index("吴京"))
+    #print(s4.index("吴京",8))
+    #print(s4.rindex("吴京"))
 
-    print(s4.count("阿巴"))
-    print(s4.count("演员"))
+    #print(s4.count("阿巴"))
+    #print(s4.count("演员"))
 
-    print(len(s4))
+    #print(len(s4))
 
-    s5="下午 \n 课 \n \n 是 \t 满课"
-    print(s5)
-    print(s5.split())
+    #s5="下午 \n 课 \n \n 是 \t 满课"
+    #print(s5)
+    #print(s5.split())
+
+    #if s3[:2]=="AA":
+    #    print(s3.split("#"))
+    #    print(s3.split("A#"))
+    #print(s5.split(maxsplit=2))
+
+    #x = '中文分词的准确性影响后续判断'
+    #test_string = jieba.lcut(x)
+    #print(test_string)
+

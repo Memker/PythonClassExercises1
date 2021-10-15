@@ -1,0 +1,23 @@
+﻿import re
+s='''
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>我的网页</title>
+</head>
+<body>
+    <div></div>
+    <div>A</div>
+    <div>AB</div>
+
+</body>
+</html>
+'''
+pat1=r'<div>.</div>'
+pat2=r'<div>,*</div>'
+pat3=r'<div>.+</div>'
+print(re.findall(pat1,s))
+print(re.findall(pat2,s))
+print(re.findall(pat3,s))
