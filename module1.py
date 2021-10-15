@@ -276,14 +276,14 @@ if __name__ == '__main__':
     #print(bList)
     #print(aList)
 
-    x=[1,2,[3,4]]
-    y=copy.deepcopy(x)
-    x[0]=5
-    print(x)
-    print(y)
-    x[2].append(6)
-    print(x)
-    print(y)
+    #x=[1,2,[3,4]]
+    #y=copy.deepcopy(x)
+    #x[0]=5
+    #print(x)
+    #print(y)
+    #x[2].append(6)
+    #print(x)
+    #print(y)
 
     #x=[1,2,[3,4]]
     #y=copy.deepcopy(x)
@@ -291,4 +291,52 @@ if __name__ == '__main__':
     #print(y)
 
 
-    #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++10.15
+
+    #s1="下午上课中"
+    #print(s1.encode('gb2312'))
+    ##print(s1.encode('gb2312').decode('utf-8'))
+    #print(s1.encode('gb2312').decode('gb2312'))
+
+    #x1=1.2345
+    #print("%+010.3f"%x1)
+
+    #data1=(102.11,444.3,13.111)
+    #print("A:{0[0]};B:{0[1]};C{0[2]}".format(data1))
+
+    #print(s1)
+    #print(s1[::-1])
+    #print(s1[1::2])
+    #s2="Python语言程序设计"
+    #for i in s2[::2]:
+    #    print(i,end=" ")
+    #print("")
+
+    s3="AA#23.8#35%#1#BB"
+    if s3[:2]=="AA":
+        s3a=s3.split("#")
+        print("室内温度：",s3a[1],"度")
+        print("室内温度：",s3a[2])
+        if(s3a[3]=="1"):
+            print("防盗检测：有外人闯入")
+        else:
+            print("无效数据")
+
+    s4="《战狼二》是吴京指导的阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴阿巴吴京阿巴"
+    print(s4.find("吴京"))
+    print(s4.find("吴京",8))
+    print(s4.find("吴京",8,29))
+    print(s4.rfind("吴京"))
+
+    print(s4.index("吴京"))
+    print(s4.index("吴京",8))
+    print(s4.rindex("吴京"))
+
+    print(s4.count("阿巴"))
+    print(s4.count("演员"))
+
+    print(len(s4))
+
+    s5="下午 \n 课 \n \n 是 \t 满课"
+    print(s5)
+    print(s5.split())
