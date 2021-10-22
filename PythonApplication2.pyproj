@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>8dd825ec-5f1f-480a-b9bc-d22cca1c1f7d</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>WebPage1.html</StartupFile>
+    <StartupFile>module1.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>

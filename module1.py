@@ -352,3 +352,21 @@ if __name__ == '__main__':
     #test_string = jieba.lcut(x)
     #print(test_string)
 
+    #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++10.22
+
+    #def say(message,times =1):
+    #    print(message * times)
+
+    #say("hello")
+    #say("hello",3)
+
+    def demo1(newitem,old_list=[]):
+        old_list.append(newitem)
+        list1 = old_list.copy()
+        old_list.clear()
+        return list1
+        
+    print(demo1("5",[1,2,3,4]))
+    print(demo1("aaa",["a","b"]))
+    print(demo1("a"))
+    print(demo1("c"))
