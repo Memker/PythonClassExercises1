@@ -360,13 +360,125 @@ if __name__ == '__main__':
     #say("hello")
     #say("hello",3)
 
-    def demo1(newitem,old_list=[]):
-        old_list.append(newitem)
-        list1 = old_list.copy()
-        old_list.clear()
-        return list1
+    #def demo1(newitem,old_list=[]):
+    #    old_list.append(newitem)
+    #    list1 = old_list.copy()
+    #    old_list.clear()
+    #    return list1
         
-    print(demo1("5",[1,2,3,4]))
-    print(demo1("aaa",["a","b"]))
-    print(demo1("a"))
-    print(demo1("c"))
+    #print(demo1("5",[1,2,3,4]))
+    #print(demo1("aaa",["a","b"]))
+    #print(demo1("a"))
+    #print(demo1("c"))
+
+    #def demo2(a,b,c=5):
+    #    print(a,b,c)
+    #demo2(3,7)
+    #demo2(a=7,b=3,c=6)
+    #demo2(c=8,a=9,b=0)
+
+    #def demo3(*p):
+    #    a=0
+    #    print(p)
+    #    for i in p:
+    #        a+=i
+    #    print(a)
+    #demo3 (1,2,3)
+    #demo3(4,5,6,1,2,3)
+
+    #def demo4(**p):
+    #    for item in p.items():
+    #        print(item)
+    #demo4(x=1,y=2,z=3)
+
+    #def register(name,age,*args,**kw):
+    #    print(name,age,args,kw)
+    #register("Alice",20)
+    #register("peter",20,"CHINA","Python","BigData",sex="男",province="东北",city="大连")
+
+    #def demo5(a,b,c):
+    #    print(a+b+c)
+    #seq=[1,2,3]
+    #demo5(*seq)
+    #tup=(1,2,3)
+    #demo5(*tup)
+
+    #def scope_test():
+    #    def do_local():
+    #        spam="我是局部变量"
+    #    def do_nonlocal():
+    #        nonlocal spam
+    #        spam="我不是局部变量,也不是全局变量"
+    #    def do_global():
+    #        global spam
+    #        spam="我是全局变量"
+    #    spam="原来的值"
+    #    do_local()
+    #    print("局部变量赋值后：",spam)
+    #    do_nonlocal()
+    #    print("nonlocal变量赋值后：",spam)
+    #    do_global()
+    #    print("全局变量赋值后：",spam)
+    #scope_test()
+    #print("全局变量：",spam)
+
+    #f=lambda x,y,z:x+y+z
+    #f(1,2,3)
+    #g=lambda x,y=2,z=3:x+y+z
+    #g(1)
+    #g(2,z=4,y=5)
+
+    print(list(map(str,range(5))))
+    print(list(map(lambda x:x+5,range(10))))
+    print(list(map(lambda x,y:x+y,range(5),range(5))))
+
+    seq=['foo','x41','?!','***']
+    def func(x):
+        return x.isalnum()
+    print(list(filter(func,seq)))
+    print(x for x in seq if x.isalnum())
+    print(list(filter(lambda x:x.isalnum(),seq)))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #from functools import reduce
+    #seq=[1,2,3,4,5,6,7,8,9]
+    #print(reduce(lambda x,y:x+y, seq))
+    #def add(x, y):
+    #    return x + y
+    #reduce(add,range(10))
+    #print(reduce(lambda x,y:x+y,map(str,range(10))))
+
+    
+
+
