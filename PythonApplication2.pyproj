@@ -4,7 +4,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>8dd825ec-5f1f-480a-b9bc-d22cca1c1f7d</ProjectGuid>
     <ProjectHome>.</ProjectHome>
-    <StartupFile>module1.py</StartupFile>
+    <StartupFile>module5.py</StartupFile>
     <SearchPath>
     </SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
@@ -22,13 +22,30 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="hw1.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="module1.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="module2.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="module3.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="module4.py">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="module5.py">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="PythonApplication2.py" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="WebPage1.html" />
+    <Content Include="序列总结.txt" />
+    <Content Include="新建 Microsoft Excel 工作表.xlsx" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
   <!-- Uncomment the CoreCompile target to enable the Build command in

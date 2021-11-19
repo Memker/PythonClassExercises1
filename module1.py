@@ -428,48 +428,16 @@ if __name__ == '__main__':
     #g(1)
     #g(2,z=4,y=5)
 
-    print(list(map(str,range(5))))
-    print(list(map(lambda x:x+5,range(10))))
-    print(list(map(lambda x,y:x+y,range(5),range(5))))
+    #print(list(map(str,range(5))))
+    #print(list(map(lambda x:x+5,range(10))))
+    #print(list(map(lambda x,y:x+y,range(5),range(5))))
 
-    seq=['foo','x41','?!','***']
-    def func(x):
-        return x.isalnum()
-    print(list(filter(func,seq)))
-    print(x for x in seq if x.isalnum())
-    print(list(filter(lambda x:x.isalnum(),seq)))
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    #seq=['foo','x41','?!','***']
+    #def func(x):
+    #    return x.isalnum()
+    #print(list(filter(func,seq)))
+    #print(x for x in seq if x.isalnum())
+    #print(list(filter(lambda x:x.isalnum(),seq)))
 
     #from functools import reduce
     #seq=[1,2,3,4,5,6,7,8,9]
@@ -478,6 +446,10 @@ if __name__ == '__main__':
     #    return x + y
     #reduce(add,range(10))
     #print(reduce(lambda x,y:x+y,map(str,range(10))))
+
+    #+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++10.29
+
+
 
     
 
